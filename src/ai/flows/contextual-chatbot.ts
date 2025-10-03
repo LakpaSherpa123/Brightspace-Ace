@@ -44,7 +44,7 @@ const GradeSchema = z.object({
 });
 
 const ContextualChatbotInputSchema = z.object({
-  message: z.string().describe('The user\'s message.'),
+  message: z.string().describe("The user's message."),
   context: z.object({
     courses: z.array(CourseSchema),
     announcements: z.array(AnnouncementSchema),
@@ -57,7 +57,7 @@ export type ContextualChatbotInput = z.infer<
 >;
 
 const ContextualChatbotOutputSchema = z.object({
-  response: z.string().describe('The AI\'s response to the user.'),
+  response: z.string().describe("The AI's response to the user."),
 });
 export type ContextualChatbotOutput = z.infer<
   typeof ContextualChatbotOutputSchema
