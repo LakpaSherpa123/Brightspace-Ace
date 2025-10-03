@@ -3,3 +3,4 @@ config();
 
 import '@/ai/flows/grade-inquiry.ts';
 import '@/ai/flows/announcement-summaries.ts';
+import '@/ai/flows/contextual-chatbot.ts';
